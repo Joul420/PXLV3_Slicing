@@ -1,0 +1,20 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {padding-top: 60px;} /*Fixed NavBar content spacing*/
+
+body, h1, h2, h3, h4, h5, p, li {font-family: 'Montserrat', sans-serif;}
+
+.navbar-brand {padding: 5px 15px;}
+.navbar-nav > li > a {padding-top:20px !important; padding-bottom:20px !important;}
+.navbar {min-height:60px !important; background: #002D3C; font-family: 'Montserrat', sans-serif; font-size: 12px;}
+ul.nav.navbar-nav li a:link, ul.nav.navbar-nav li a:visited {color: #FFF; text-transform: uppercase;}
+ul.nav.navbar-nav li a:hover {background: #FF0364;}
+
+.homeicon {
+	-webkit-border-radius: 20px !important;
+	   -moz-border-radius: 20px !important;
+			border-radius: 20px !important;
+	background: #FF0364;
+	padding: 10px 20px;
+	margin: 0;
+}
