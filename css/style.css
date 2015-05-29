@@ -1,14 +1,33 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(../fonts/montserrat/stylesheet.css);
 
-body {padding-top: 60px;} /*Fixed NavBar content spacing*/
+/* General styling */
 
-body, h1, h2, h3, h4, h5, p, li {font-family: 'Montserrat', sans-serif;}
+body {padding-top: 60px; background: #F5F5F5;} /*Fixed NavBar content spacing*/
+
+body, h1, h2, h3, h4, h5, p, li {font-family: 'montserratlight', sans-serif;}
+
+h3 {border-left: 3px solid #FF0364; padding-left: 5px; font-family: 'montserrathairline', sans-serif; font-size: 20px;}
+
+/* Bootstrap base classes tweaks */
 
 .navbar-brand {padding: 5px 15px;}
 .navbar-nav > li > a {padding-top:20px !important; padding-bottom:20px !important;}
-.navbar {min-height:60px !important; background: #002D3C; font-family: 'Montserrat', sans-serif; font-size: 12px; border: none;}
+.navbar {min-height:60px !important; background: #002D3C; font-size: 12px; border: none;}
 ul.nav.navbar-nav li a:link, ul.nav.navbar-nav li a:visited {color: #FFF; text-transform: uppercase;}
 ul.nav.navbar-nav li a:hover {background: #FF0364;}
+
+.thumbnail {
+	border: none;
+	border-radius: 0;
+}
+.thumbnail>img {
+	height: 100%; /* Defintly needs adjustments !!! */
+}
+.thumbnail .caption {
+	padding: 0;
+}
+
+/* CUSTOM CLASSES */
 
 .homeicon {
 	-webkit-border-radius: 20px !important;
@@ -17,4 +36,31 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 	background: #FF0364;
 	padding: 10px 20px;
 	margin: 0;
+}
+
+.th_test .caption h4 {
+	position: absolute;
+	padding: 5px;
+	bottom: 15px;
+	font-family: 'montserratbold', sans-serif;
+	font-size: 13px;
+	color: #FFF;
+}
+
+.blck_news {
+	background: #fff;
+}
+.blck_news ul {
+	padding: 10px 0px 5px 10px;
+}
+.blck_news ul li {
+	font-family: 'montserratlight', sans-serif;
+	font-size: 11px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	list-style: none;
+	border-left: 3px solid #FF0364;
+}
+.blck_news ul li span {
+	font-family: 'montserrathairline', sans-serif;
 }
