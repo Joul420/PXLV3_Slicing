@@ -163,3 +163,8 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
   font-family: 'bigjohn', sans-serif;
   line-height: 1em;
 }
+.content img {
+  display:block;
+  margin:10px auto;
+  max-width:100%;
+}
