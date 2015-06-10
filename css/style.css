@@ -1,4 +1,10 @@
 @import url(../fonts/montserrat/stylesheet.css);
+@font-face {
+    font-family: 'bigjohn';
+    src: url('fonts/BIG JOHN.otf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* General styling */
 
@@ -6,6 +12,8 @@ body {padding-top: 60px; background: #F5F5F5;} /*Fixed NavBar content spacing*/
 
 body, h1, h2, h3, h4, h5, p, li {font-family: 'montserratlight', sans-serif;}
 
+h1 {font-family: 'bigjohn', sans-serif;font-weight: bold;}
+h2 {font-family: 'bigjohn', sans-serif;font-weight: bold;}
 h3 {border-left: 3px solid #FF0364; padding-left: 5px; font-family: 'montserrathairline', sans-serif; font-size: 20px;}
 
 /* Bootstrap base classes tweaks */
@@ -17,44 +25,45 @@ ul.nav.navbar-nav li a:link, ul.nav.navbar-nav li a:visited {color: #FFF; text-t
 ul.nav.navbar-nav li a:hover {background: #FF0364;}
 
 .thumbnail {
-	border: none;
-	border-radius: 0;
+  border: none;
+  border-radius: 0;
 }
 .thumbnail>img {
-	height: 100%; /* Definitely needs adjustments !!! */
+  height: 100%; /* Definitely needs adjustments !!! */
 }
 .thumbnail .caption {
-	padding: 0;
+  padding: 0;
 }
+.breadcrumb {border-left: 3px solid #FF0364; padding: 0 0 0 5px; border-radius: 0; margin-top:12px}
 
 /* CUSTOM CLASSES */
 
 .homeicon {
-	-webkit-border-radius: 20px !important;
-	   -moz-border-radius: 20px !important;
-			border-radius: 20px !important;
-	background: #FF0364;
-	padding: 10px 20px;
-	margin: 0;
+  -webkit-border-radius: 20px !important;
+     -moz-border-radius: 20px !important;
+          border-radius: 20px !important;
+  background: #FF0364;
+  padding: 10px 20px;
+  margin: 0;
 }
 
 .th_test .caption h4 {
-	position: absolute;
-	padding: 5px;
-	bottom: 15px;
-	font-family: 'montserratbold', sans-serif;
-	font-size: 13px;
-	color: #FFF;
+  position: absolute;
+  padding: 5px;
+  bottom: 15px;
+  font-family: 'montserratbold', sans-serif;
+  font-size: 13px;
+  color: #FFF;
 }
 
 .th_test {
-    background: -moz-linear-gradient(top, rgba(29,29,27,0) 0%, rgba(0,45,60,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,45,60,1)), color-stop(100%,rgba(29,29,27,0))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a61D1D1B', endColorstr='#00002D3C',GradientType=0 ); /* IE6-9 */
+  background: -moz-linear-gradient(top, rgba(29,29,27,0) 0%, rgba(0,45,60,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,45,60,1)), color-stop(100%,rgba(29,29,27,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a61D1D1B', endColorstr='#00002D3C',GradientType=0 ); /* IE6-9 */
 }
 
 .th_test img {
@@ -64,19 +73,93 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 }
 
 .blck_news {
-	background: #fff;
+  background: #fff;
 }
 .blck_news ul {
-	padding: 10px 0px 5px 10px;
+  padding: 10px 0px 5px 10px;
 }
 .blck_news ul li {
-	font-family: 'montserratlight', sans-serif;
-	font-size: 11px;
-	margin-bottom: 10px;
-	padding-left: 5px;
-	list-style: none;
-	border-left: 3px solid #FF0364;
+  border-left: 3px solid #FF0364;
+  font-family: 'montserratlight', sans-serif;
+  font-size: 11px;
+  list-style: none; 
+  margin-bottom: 10px;
+  padding-left: 5px;
 }
 .blck_news ul li span {
-	font-family: 'montserrathairline', sans-serif;
+  font-family: 'montserrathairline', sans-serif;
+}
+
+.col-fixed-300 {
+  color: white;
+  height: 100%;
+  position: fixed;
+  width: 300px;
+  z-index: 1;
+}
+.col-image-cover {
+  background: #002D3C;
+  overflow: hidden;
+}
+.col-image-content {
+  padding: 15px;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+.image-cover-gradient {
+  background: -moz-linear-gradient(top,  rgba(0,45,60,1) 0%, rgba(29,29,27,0) 30%, rgba(29,29,27,0) 60%, rgba(0,45,60,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,45,60,1)), color-stop(30%,rgba(29,29,27,0)), color-stop(60%,rgba(29,29,27,0)), color-stop(100%,rgba(0,45,60,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,45,60,1) 0%,rgba(29,29,27,0) 30%,rgba(29,29,27,0) 60%,rgba(0,45,60,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,45,60,1) 0%,rgba(29,29,27,0) 30%,rgba(29,29,27,0) 60%,rgba(0,45,60,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,45,60,1) 0%,rgba(29,29,27,0) 30%,rgba(29,29,27,0) 60%,rgba(0,45,60,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,45,60,1) 0%,rgba(29,29,27,0) 30%,rgba(29,29,27,0) 60%,rgba(0,45,60,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002d3c', endColorstr='#002d3c',GradientType=0 ); /* IE6-9 */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.image-cover-left {
+  left: -9999px;
+  margin: auto;
+  max-height: 100%;
+  position: absolute;
+  right: -9999px;
+  z-index: -2;
+}
+.col-offset-300 {
+  padding-left: 315px;
+}
+.cat-link-plain {
+  background: #FF0364;
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  font-weight: bold;
+}
+.cat-link-plain:visited,
+.cat-link-plain:focus,
+.cat-link-plain:active{
+  color: white;
+  text-decoration: none;
+}
+.cat-link-plain:hover {
+  color: white;
+  text-decoration: underline;
+}
+.game-info {
+  position:fixed;
+  bottom:0;
+}
+.content p:first-child:first-letter {
+  font-size: 4.3em;
+  float: left;
+  color: #FF0364;
+  font-weight: bold;
+  text-indent:0;
+  margin-right:0.1em;
+  font-family: 'bigjohn', sans-serif;
+  line-height: 1em;
 }
