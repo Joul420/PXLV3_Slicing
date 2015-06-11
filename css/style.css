@@ -1,10 +1,4 @@
 @import url(../fonts/montserrat/stylesheet.css);
-@font-face {
-    font-family: 'bigjohn';
-    src: url('fonts/BIG JOHN.otf');
-    font-weight: normal;
-    font-style: normal;
-}
 
 /* General styling */
 
@@ -12,8 +6,8 @@ body {padding-top: 60px; background: #F5F5F5;} /*Fixed NavBar content spacing*/
 
 body, h1, h2, h3, h4, h5, p, li {font-family: 'montserratlight', sans-serif;}
 
-h1 {font-family: 'bigjohn', sans-serif;font-weight: bold;}
-h2 {font-family: 'bigjohn', sans-serif;font-weight: bold;}
+h1 {font-weight: bold;}
+h2 {font-weight: bold;}
 h3 {border-left: 3px solid #FF0364; padding-left: 5px; font-family: 'montserrathairline', sans-serif; font-size: 20px;}
 
 /* Bootstrap base classes tweaks */
