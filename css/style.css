@@ -36,6 +36,10 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 }
 .breadcrumb {border-left: 3px solid #FF0364; padding: 0 0 0 5px; border-radius: 0; margin-top:12px}
 
+.nav-pills>li+li {border-left: 1px solid #868686;}
+.nav-pills a {color: #868686;}
+.nav-pills a:hover,.nav-pills a:active,.nav-pills a:focus {color: #FF0364;}
+
 /* CUSTOM CLASSES */
 
 .homeicon {
@@ -152,6 +156,9 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 .game-info {
   position:fixed;
   bottom:0;
+}
+.content {
+  margin-top: 20px;
 }
 .content p:first-child:first-letter {
   font-size: 4.3em;
