@@ -31,12 +31,16 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 .breadcrumb {border-left: 3px solid #FF0364; padding: 0 0 0 5px; border-radius: 0; margin-top:12px}
 
 .nav-pills>li+li {border-left: 1px solid #868686;}
-.nav-pills a {color: #868686;}
-.nav-pills a:hover,.nav-pills a:active,.nav-pills a:focus {color: #FF0364;}
+.nav-pills>li>a {color: #868686;}
+.nav-pills>li>a:hover,.nav-pills>li>a:active,.nav-pills>li>a:focus {color: #FF0364;background:none;}
  
 /* CUSTOM CLASSES */
 #showLeft {
   cursor: pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }
 #showLeft.active {
   background: #FF0364;
@@ -73,10 +77,11 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 .cbp-spmenu a:hover {
   background: #FF0364;
 }
-
+.cbp-spmenu a:hover,
+.cbp-spmenu a:visited,
+.cbp-spmenu a:link,
 .cbp-spmenu a:active {
-  background: #afdefa;
-  color: #47a3da;
+  text-decoration: none;
 }
 
 .cbp-spmenu-vertical {
