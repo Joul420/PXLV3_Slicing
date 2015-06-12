@@ -38,6 +38,10 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 #showLeft {
   cursor: pointer;
 }
+#showLeft.active {
+  background: #FF0364;
+  color: white;
+}
 .col-fixed-300.col-image-cover.down > div{
   margin-top: 362px;
 }
