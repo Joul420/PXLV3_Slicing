@@ -49,9 +49,6 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 .col-fixed-300.col-image-cover.down > div{
   margin-top: 362px;
 }
-.col-fixed-300.col-image-cover.down .game-info{
-  display:none;
-}
 .col-image-cover > div{
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -164,8 +161,10 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 
 .col-fixed-300 {
   color: white;
-  height: 100%;
-  position: fixed;
+  position: absolute;
+  top:60px;
+  bottom:0;
+  left:0;
   width: 300px;
   z-index: 1;
 }
@@ -222,7 +221,7 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
   text-decoration: underline;
 }
 .game-info {
-  position:fixed;
+  position:absolute;
   bottom:0;
 }
 .content {
