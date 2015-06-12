@@ -35,19 +35,24 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 .nav-pills a:hover,.nav-pills a:active,.nav-pills a:focus {color: #FF0364;}
  
 /* CUSTOM CLASSES */
+#showLeft {
+  cursor: pointer;
+}
+.col-fixed-300.col-image-cover.down > div{
+  margin-top: 362px;
+}
+.col-fixed-300.col-image-cover.down .game-info{
+  display:none;
+}
+.col-image-cover > div{
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 .cbp-spmenu {
-  background: #47a3da;
+  background: #002D3C;
   position: fixed;
   padding-top: 60px;
-}
-
-.cbp-spmenu h3 {
-  color: #afdefa;
-  font-size: 1.9em;
-  padding: 20px;
-  margin: 0;
-  font-weight: 300;
-  background: #0d77b6;
 }
 
 .cbp-spmenu a {
@@ -68,21 +73,19 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 
 .cbp-spmenu-vertical {
   width: 300px;
-  height: 100%;
   top: 0;
   z-index: 1000;
 }
 
 .cbp-spmenu-vertical a {
-  border-bottom: 1px solid #258ecd;
   padding: 1em;
 }
 
 .cbp-spmenu-left {
-  left: -300px;
+  top: -600px;
 }
 .cbp-spmenu-left.cbp-spmenu-open {
-  left: 0px;
+  top: 0px;
 }
 .cbp-spmenu{
   -webkit-transition: all 0.3s ease;
