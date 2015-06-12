@@ -53,6 +53,10 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
   background: #002D3C;
   position: fixed;
   padding-top: 60px;
+  border-bottom: 1px solid #035B5F;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .cbp-spmenu a {
@@ -86,11 +90,6 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 }
 .cbp-spmenu-left.cbp-spmenu-open {
   top: 0px;
-}
-.cbp-spmenu{
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 @media screen and (max-height: 26.375em){
   .cbp-spmenu-vertical {
