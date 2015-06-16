@@ -30,9 +30,9 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 }
 .breadcrumb {border-left: 3px solid #FF0364; padding: 0 0 0 5px; border-radius: 0; margin-top:12px}
 
-.nav-pills>li+li {border-left: 1px solid #868686;}
-.nav-pills>li>a {color: #868686;}
-.nav-pills>li>a:hover,.nav-pills>li>a:active,.nav-pills>li>a:focus {color: #FF0364;background:none;}
+.nav-pills.meta-info>li+li {border-left: 1px solid #868686;}
+.nav-pills.meta-info>li>a {color: #868686;}
+.nav-pills.meta-info>li>a:hover,.nav-pills.meta-info>li>a:active,.nav-pills.meta-info>li>a:focus {color: #FF0364;background:none;}
  
 /* CUSTOM CLASSES */
 #showLeft {
@@ -46,10 +46,10 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
   background: #FF0364;
   color: white;
 }
-.col-fixed-300.col-image-cover.down > div{
+.col-fixed-300.down > div{
   margin-top: 362px;
 }
-.col-image-cover > div{
+.col-fixed-300 > div{
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -200,6 +200,44 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
   right: -9999px;
   z-index: -2;
 }
+.col-news-content {
+  background: rgb(236,236,236); /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(236,236,236,1) 1%, rgba(236,236,236,1) 90%, rgba(219,219,219,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%,rgba(236,236,236,1)), color-stop(90%,rgba(236,236,236,1)), color-stop(100%,rgba(219,219,219,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(236,236,236,1) 1%,rgba(236,236,236,1) 90%,rgba(219,219,219,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(236,236,236,1) 1%,rgba(236,236,236,1) 90%,rgba(219,219,219,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(236,236,236,1) 1%,rgba(236,236,236,1) 90%,rgba(219,219,219,1) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(236,236,236,1) 1%,rgba(236,236,236,1) 90%,rgba(219,219,219,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#dbdbdb',GradientType=1 ); /* IE6-9 */
+  height: 100%;
+  z-index: -10;
+  position: relative;
+}
+.col-top-title {
+  text-align: center;
+  background-color: #FF0364;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: left;
+  width: 260px;
+}
+.col-top-title-after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 0 30px 20px;
+  border-color: transparent transparent transparent #FF0364;
+  float: left;
+}
+.col-top-title-before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 20px 30px 0;
+  border-color: transparent #FF0364 transparent transparent;
+  float: left;
+}
 .news-title-top {
   background: -moz-linear-gradient(top, rgba(29,29,27,0) 0%, rgba(0,45,60,1) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,45,60,1)), color-stop(100%,rgba(29,29,27,0))); /* Chrome,Safari4+ */
@@ -228,6 +266,34 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
   position: absolute;
   bottom: 0;
 }
+.thumbed-link {
+  background: -moz-linear-gradient(top, rgba(29,29,27,0) 0%, rgba(0,45,60,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,45,60,1)), color-stop(100%,rgba(29,29,27,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a61D1D1B', endColorstr='#00002D3C',GradientType=0 ); /* IE6-9 */
+  height: 90px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+  width: 260px;
+}
+.thumbed-link img {
+  bottom: -9999px;
+  margin: auto;
+  max-width: 100%;
+  position: absolute;
+  top: -9999px;
+  z-index: -2;
+}
+.thumbed-link .text {
+  color: white;
+  margin: 15px;
+  position: absolute;
+  bottom: 0;
+}
 .col-offset-300 {
   padding-left: 315px;
 }
@@ -247,6 +313,22 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 .cat-link-plain:hover {
   color: white;
   text-decoration: underline;
+}
+.tab-nav {
+  margin: 15px 20px 0;
+}
+.tab-nav > li > a {
+  color: #FF0364;
+  border: 2px solid #FF0364;
+  border-radius: 0;
+  margin: 0 1px;
+  padding: 2px 4px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+  background-color: #FF0364;
+}
+.tab-content {
+  margin: 15px 20px 0;
 }
 .game-info {
   position:absolute;
