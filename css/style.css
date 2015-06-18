@@ -328,7 +328,12 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
   background-color: #FF0364;
 }
 .tab-content {
-  margin: 15px 20px 0;
+  margin: 15px 20px;
+}
+.tab-content a {
+  position: absolute;
+  bottom: 15px;
+  width: 260px;
 }
 .game-info {
   position:absolute;
