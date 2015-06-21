@@ -31,9 +31,6 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
   border: none;
   border-radius: 0;
 }
-.thumbnail>img {
-  height: 100%; /* Definitely needs adjustments !!! */
-}
 .thumbnail .caption {
   padding: 0;
 }
