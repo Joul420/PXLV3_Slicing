@@ -181,7 +181,7 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 .content p:first-child:first-letter {
   color: #FF0364;
   float: left;
-  font-family: 'bigjohn', sans-serif;
+  font-family: 'montserratbold', sans-serif;
   font-size: 4.3em;
   font-weight: bold;
   line-height: 1em;
@@ -372,4 +372,56 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 .cat-col {
   background: url('../img/background-pxl-category.jpg');
   height: 100%;
+}
+.filtre-categorie {
+  color: #FF0364;
+  font-family: 'montserratbold', sans-serif;
+  font-size: 1.4em;
+}
+.filtres a {
+  background: #FF0364;
+  color: #FFF;
+  padding: 2px 5px;
+  line-height: 2em;
+}
+
+/* Page Catégorie */
+.card-box {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 100%;
+  border-bottom: 9px solid #dad8da;
+  margin: 15px 0;
+}
+.card-box .slider-content {
+  background: #F6F4F6;
+  position: absolute;
+  top: 0;
+  height: 300px;
+  padding: 8px;
+  margin-top: 75%;
+  transition: 1s;
+}
+.card-box.active   .slider-content,
+.card-box:hover  .slider-content{
+  margin-top: 15%;
+}
+.slider-content h2 {
+  font-size: 1.1em;
+  margin: 0;
+}
+.slider-content .accroche {
+  font-size: .9em;
+  margin-bottom: 20px;
+}
+.slider-content .teaser {
+  font-size: .9em;
+}
+.freeze-button {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  margin-top: 70%;
+  cursor: pointer;
 }
