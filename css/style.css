@@ -10,24 +10,69 @@ h1 {font-family: 'montserratbold', sans-serif;}
 h2 {font-family: 'montserratbold', sans-serif;}
 h3 {border-left: 3px solid #FF0364; padding-left: 5px; font-family: 'montserrathairline', sans-serif; font-size: 20px;}
 
-/* Bootstrap base classes tweaks */
+/* Navbar styling */
 
 .navbar-brand {padding: 5px 15px;}
 .navbar-nav > li > a {padding-top:20px !important; padding-bottom:20px !important;}
 .navbar {min-height:60px !important; background: #002D3C; font-size: 12px; border: none;}
 ul.nav.navbar-nav li a:link, ul.nav.navbar-nav li a:visited {color: #FFF; text-transform: uppercase;}
 ul.nav.navbar-nav li a:hover {background: #FF0364;}
+.homeicon {
+  -webkit-border-radius: 20px !important;
+     -moz-border-radius: 20px !important;
+          border-radius: 20px !important;
+  background: #FF0364;
+  padding: 10px 20px;
+  margin: 0;
+}
 
+/* Homepage thumbnails */
 .thumbnail {
   border: none;
   border-radius: 0;
 }
-.thumbnail>img {
-  height: 100%; /* Definitely needs adjustments !!! */
-}
 .thumbnail .caption {
   padding: 0;
 }
+/* Gradient test */
+.th_test {
+  background: -moz-linear-gradient(top, rgba(29,29,27,0) 0%, rgba(0,45,60,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,45,60,1)), color-stop(100%,rgba(29,29,27,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a61D1D1B', endColorstr='#00002D3C',GradientType=0 ); /* IE6-9 */
+}
+
+.th_test img {
+  position:relative;
+  z-index:-1;
+  display:block;
+}
+
+/* Homepage widget News */
+
+.blck_news {
+  background: #fff;
+}
+.blck_news ul {
+  padding: 10px 0px 5px 10px;
+}
+.blck_news ul li {
+  border-left: 3px solid #FF0364;
+  font-family: 'montserratlight', sans-serif;
+  font-size: 11px;
+  list-style: none; 
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+.blck_news ul li span {
+  font-family: 'montserrathairline', sans-serif;
+}
+
+/* Breadcrumb + nav-pills */
+
 .breadcrumb {border-left: 3px solid #FF0364; padding: 0 0 0 5px; border-radius: 0; margin-top:12px}
 
 .nav-pills.meta-info>li+li {border-left: 1px solid #868686;}
@@ -35,6 +80,8 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 .nav-pills.meta-info>li>a:hover,.nav-pills.meta-info>li>a:active,.nav-pills.meta-info>li>a:focus {color: #FF0364;background:none;}
  
 /* CUSTOM CLASSES */
+.homerow {margin: 0 10px;}
+
 #showLeft {
   cursor: pointer;
   -webkit-user-select:none;
@@ -107,14 +154,7 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
     left: -190px;
   }
 }
-.homeicon {
-  -webkit-border-radius: 20px !important;
-     -moz-border-radius: 20px !important;
-          border-radius: 20px !important;
-  background: #FF0364;
-  padding: 10px 20px;
-  margin: 0;
-}
+
 
 .th_test .caption h4 {
   position: absolute;
@@ -123,40 +163,6 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
   font-family: 'montserratbold', sans-serif;
   font-size: 13px;
   color: #FFF;
-}
-
-.th_test {
-  background: -moz-linear-gradient(top, rgba(29,29,27,0) 0%, rgba(0,45,60,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,45,60,1)), color-stop(100%,rgba(29,29,27,0))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* IE10+ */
-  background: linear-gradient(to bottom, rgba(29,29,27,0) 0%,rgba(0,45,60,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a61D1D1B', endColorstr='#00002D3C',GradientType=0 ); /* IE6-9 */
-}
-
-.th_test img {
-  position:relative;
-  z-index:-1;
-  display:block;
-}
-
-.blck_news {
-  background: #fff;
-}
-.blck_news ul {
-  padding: 10px 0px 5px 10px;
-}
-.blck_news ul li {
-  border-left: 3px solid #FF0364;
-  font-family: 'montserratlight', sans-serif;
-  font-size: 11px;
-  list-style: none; 
-  margin-bottom: 10px;
-  padding-left: 5px;
-}
-.blck_news ul li span {
-  font-family: 'montserrathairline', sans-serif;
 }
 
 /* BigLeft General */
