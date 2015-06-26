@@ -5,6 +5,12 @@
 body {padding-top: 60px; background: #F5F5F5;} /*Fixed NavBar content spacing*/
 
 body, h1, h2, h3, h4, h5, p, li {font-family: 'montserratlight', sans-serif;}
+a {color: #FF0364;}
+a:hover, a:focus{color: #FF0364;}
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+  background-color: #FF0364;
+  border-color: #FF0364;
+}
 
 h1 {font-family: 'montserratbold', sans-serif;}
 h2 {font-family: 'montserratbold', sans-serif;}
@@ -430,4 +436,44 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
   right: 15px;
   margin-top: 70%;
   cursor: pointer;
+}
+
+.caption h2 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.thumbnail:hover .caption {
+  top: 15px;
+}
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+.thumbnail .caption {
+  position: absolute;
+  top: 80%;
+  transition: 1s;
+  color: #FFF;
+  padding: 5px;
+}
+.thumbnail .teaser {
+  margin-top: 10px;
+}
+.th_test {
+  background: -moz-linear-gradient(top, rgba(29,29,27,0) 0%, rgba(0,45,60,0.75) 50%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,45,60,0.75)), color-stop(50%,rgba(29,29,27,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(29,29,27,0) 0%,rgba(0,45,60,0.75) 50%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(29,29,27,0) 0%,rgba(0,45,60,0.75) 50%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(29,29,27,0) 0%,rgba(0,45,60,0.75) 50%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(29,29,27,0) 0%,rgba(0,45,60,0.75) 50%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a61D1D1B', endColorstr='#00002D3C',GradientType=0 ); /* IE6-9 */
+}
+.th_test:hover {
+  background-position: 0 100%;
+}
+.th_test {
+  transition: 1s;
+  background-size: auto 200%;
+  background-position: 0 0;
 }
