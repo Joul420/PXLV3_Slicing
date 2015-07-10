@@ -1,9 +1,30 @@
 $(document).ready(function(){
   sizeContent();
-  $('#showLeft').click(function(e){
-    $(this).toggleClass('active');
-    $('.cbp-spmenu-left').toggleClass('cbp-spmenu-open');
-    $('.col-fixed-300').toggleClass('down');
+  $('#showMenu').click(function(e){
+    if(!$(this).hasClass('active')) {
+      $(this).addClass('active');
+      $('#big-left-search').removeClass('open');
+      $('#showSearch').removeClass('active');
+      $('#big-left-menu').addClass('open');
+      $('.col-fixed-300').removeClass('down-big').addClass('down-little');
+    } else {
+      $(this).removeClass('active');
+      $('#big-left-menu').removeClass('open');
+      $('.col-fixed-300').removeClass('down-little').removeClass('down-big');
+    }
+  });
+  $('#showSearch').click(function(e){
+    if(!$(this).hasClass('active')) {
+      $(this).addClass('active');
+      $('#big-left-menu').removeClass('open');
+      $('#showMenu').removeClass('active');
+      $('#big-left-search').addClass('open');
+      $('.col-fixed-300').removeClass('down-little').addClass('down-big');
+    } else {
+      $(this).removeClass('active');
+      $('#big-left-search').removeClass('open');
+      $('.col-fixed-300').removeClass('down-little').removeClass('down-big');
+    }
   });
   
   $('.slider-content').append('<span class="freeze-button glyphicon glyphicon-pause"></span>')
