@@ -138,75 +138,89 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 /* CUSTOM CLASSES */
 .homerow {margin: 0 10px;}
 
+<<<<<<< HEAD
 #showLeft, #showLeft2 {
+=======
+#showMenu {
+>>>>>>> origin/master
   cursor: pointer;
   -webkit-user-select:none;
   -moz-user-select:none;
   -ms-user-select:none;
   user-select:none;
 }
+<<<<<<< HEAD
 #showLeft.active, #showLeft2.active {
+=======
+#showMenu.active {
+>>>>>>> origin/master
   background: #FF0364;
   color: white;
 }
-.col-fixed-300.down > div{
+#showSearch {
+  cursor: pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+#showSearch.active {
+  background: #FF0364;
+  color: white;
+}
+.col-fixed-300.down-little > div{
   margin-top: 362px;
+}
+.col-fixed-300.down-big > div{
+  margin-top: 662px;
 }
 .col-fixed-300 > div{
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.cbp-spmenu {
+.big-left-sliding-box {
   background: #002D3C;
-  position: fixed;
-  padding-top: 60px;
   border-bottom: 2px dashed #FF0364;
+  padding-top: 60px;
+  position: fixed;
+  top: -364px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  width: 300px;
+  z-index: 1000;
 }
 
-.cbp-spmenu a {
+#big-left-menu a {
   display: block;
   color: #fff;
   font-size: 1.1em;
   font-weight: 300;
-}
-
-.cbp-spmenu a:hover {
-  background: #FF0364;
-}
-.cbp-spmenu a:hover,
-.cbp-spmenu a:visited,
-.cbp-spmenu a:link,
-.cbp-spmenu a:active {
-  text-decoration: none;
-}
-
-.cbp-spmenu-vertical {
-  width: 300px;
-  top: 0;
-  z-index: 1000;
-}
-
-.cbp-spmenu-vertical a {
   padding: 1em;
 }
 
-.cbp-spmenu-left {
-  top: -600px;
+#big-left-menu a:hover {
+  background: #FF0364;
 }
-.cbp-spmenu-left.cbp-spmenu-open {
+#big-left-menu a:hover,
+#big-left-menu a:visited,
+#big-left-menu a:link,
+#big-left-menu a:active {
+  text-decoration: none;
+}
+
+.big-left-sliding-box.open {
   top: 0px;
 }
+
 @media screen and (max-height: 26.375em){
-  .cbp-spmenu-vertical {
+  .big-left-sliding-box {
     font-size: 90%;
     width: 190px;
   }
 
-  .cbp-spmenu-left {
+  .big-left-sliding-box {
     left: -190px;
   }
 }
