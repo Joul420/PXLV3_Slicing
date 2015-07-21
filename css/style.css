@@ -12,9 +12,7 @@ a:hover, a:focus{color: #FF0364;}
   border-color: #FF0364;
 }
 
-h1 {font-family: 'montserratbold', sans-serif;}
-h2 {font-family: 'montserratbold', sans-serif;}
-h3 {border-left: 3px solid #FF0364; padding-left: 5px; font-family: 'montserrathairline', sans-serif; font-size: 20px;}
+h1 {border-left: 1px solid #FF0364; padding-left: 5px; font-family: 'montserrathairline', sans-serif; font-size: 20px;}
 
 /* Navbar styling */
 
@@ -36,6 +34,10 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 .thumbnail {
   border: none;
   border-radius: 0;
+/* Lord of thumbnail's shadows */
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(184,184,184,1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(184,184,184,1);
+  box-shadow: 0px 0px 10px 0px rgba(184,184,184,1);
 }
 .thumbnail .caption {
   padding: 0;
@@ -59,22 +61,70 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 
 /* Homepage widget News */
 
-.blck_news {
+.blck-news {
   background: #fff;
 }
-.blck_news ul {
+
+.list-bbq {
   padding: 10px 0px 5px 10px;
+  background: #fff;
 }
-.blck_news ul li {
-  border-left: 3px solid #FF0364;
+.list-bbq li {
+  border-left: 1px solid #FF0364;
   font-family: 'montserratlight', sans-serif;
   font-size: 11px;
   list-style: none; 
   margin-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 5px;	
 }
-.blck_news ul li span {
+.list-bbq li span {
   font-family: 'montserrathairline', sans-serif;
+}
+
+/* Homepage PXLBBQTV */
+
+#pan-pxtv {
+  background: url(../img/bg_pxtv.jpg);
+  width: 100%;
+  margin: 0 0 0 -15px;
+  padding-left: 25px;
+}
+
+#pan-pxtv h1 {
+	color: #fff;
+	height: 50px;
+}
+
+.logo-pxtv {
+	vertical-align: -15px;
+}
+
+#twitch {
+	margin: 15px 0;
+	height: 50px;
+}
+
+/* Emplacement communautaire */
+
+#commu {
+	background: #fff;
+	height: 335px;
+	margin-bottom: 25px;
+	padding-top: 150px;
+	text-align: center;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(184,184,184,1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(184,184,184,1);
+	box-shadow: 0px 0px 10px 0px rgba(184,184,184,1);
+}
+
+/* FOOTER (de gueules) */
+#footer {
+	background: #002D3C;
+	height: 90px;
+	color: #fff;
+	text-align: center;
+	padding-top: 40px;
+	padding-left: 300px;
 }
 
 /* Breadcrumb + nav-pills */
@@ -88,14 +138,14 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 /* CUSTOM CLASSES */
 .homerow {margin: 0 10px;}
 
-#showLeft {
+#showLeft, #showLeft2 {
   cursor: pointer;
   -webkit-user-select:none;
   -moz-user-select:none;
   -ms-user-select:none;
   user-select:none;
 }
-#showLeft.active {
+#showLeft.active, #showLeft2.active {
   background: #FF0364;
   color: white;
 }
@@ -159,16 +209,6 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
   .cbp-spmenu-left {
     left: -190px;
   }
-}
-
-
-.th_test .caption h4 {
-  position: absolute;
-  padding: 5px;
-  bottom: 15px;
-  font-family: 'montserratbold', sans-serif;
-  font-size: 13px;
-  color: #FFF;
 }
 
 /* BigLeft General */
