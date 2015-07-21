@@ -138,22 +138,15 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 /* CUSTOM CLASSES */
 .homerow {margin: 0 10px;}
 
-<<<<<<< HEAD
-#showLeft, #showLeft2 {
-=======
-#showMenu {
->>>>>>> origin/master
+#showMenu, #showMenu2 {
   cursor: pointer;
   -webkit-user-select:none;
   -moz-user-select:none;
   -ms-user-select:none;
   user-select:none;
 }
-<<<<<<< HEAD
-#showLeft.active, #showLeft2.active {
-=======
-#showMenu.active {
->>>>>>> origin/master
+
+#showMenu.active, #showMenu2.active {
   background: #FF0364;
   color: white;
 }
