@@ -31,6 +31,9 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 }
 
 /* Homepage thumbnails */
+.homepage-container {
+	padding-right: 0;
+}
 .thumbnail {
   border: none;
   border-radius: 0;
@@ -86,7 +89,8 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 #pan-pxtv {
   background: url(../img/bg_pxtv.jpg);
   width: 100%;
-  margin: 0 0 0 -15px;
+  margin: 0;
+  margin-left: -15px;
   padding-left: 25px;
 }
 
