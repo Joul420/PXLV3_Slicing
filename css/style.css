@@ -88,9 +88,7 @@ ul.nav.navbar-nav li a:hover {background: #FF0364;}
 
 #pan-pxtv {
   background: url(../img/bg_pxtv.jpg);
-  width: 100%;
-  margin: 0;
-  margin-left: -15px;
+  margin: 0 0 0 -15px;
   padding-left: 25px;
 }
 
